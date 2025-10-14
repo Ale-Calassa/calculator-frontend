@@ -1,0 +1,92 @@
+.calc-container {
+  max-width: 400px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  background-color: #83d6ed;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.calc-container h1 {
+  margin: 0.1rem;
+  margin-bottom: 1.5rem;
+  color: #151515;
+}
+
+.calc-display {
+  background-color: #222;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: right;
+  overflow-x: auto;
+}
+
+/* Grid dos Botões */
+.calc-button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: .75rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #d5d5d5;
+}
+
+.equals:hover {
+  background-color: #63acff;
+}
+
+/* Msg de erro */
+.error {
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.8rem;
+}
+
+/* RESULTADO */
+.result {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* HISTÓRICO */
+.calc-history {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.calc-history h3 {
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.calc-history ul {
+  list-style-type: none;
+  padding-left: 0.1rem;
+}
+
+.calc-history li {
+  background-color: #fff;
+  padding: 0.5rem;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
